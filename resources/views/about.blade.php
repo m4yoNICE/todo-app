@@ -2,5 +2,5 @@
     <x-slot:heading>
     About
     </x-slot>
-  <h1>About Page</h1>
+  <h1>About Page. Kalibangon ko yawa</h1>
 </x-layout>
