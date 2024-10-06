@@ -4,7 +4,7 @@ namespace Database\Seeders;
 
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
-use App\Models\TodoModel; 
+use App\Models\TodoModelFactory; 
 
 class TodoSeeder extends Seeder
 {
@@ -13,6 +13,7 @@ class TodoSeeder extends Seeder
      */
     public function run(): void
     {
-        TodoModel::factory()->count(10)->create();
+        TodoModelFactory::factory()->count(10)->create();
+
     }
 }

@@ -14,12 +14,15 @@ class TodoFactory extends Factory
      *
      * @return array<string, mixed>
      */
+
+    protected $model = \App\Models\TodoModelFactory::class;
+
     public function definition(): array
     {
         return [
             'title' => $this->faker->sentence(3),
             'description' => $this->faker->paragraph(),
-            'compeleted' => $this->faker->boolean(50), 
+            'completed' => $this->faker->boolean(50), 
         ];
     }
 }
