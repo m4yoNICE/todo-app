@@ -15,7 +15,6 @@ class TodoModelFactory extends Factory
      * @return array<string, mixed>
      */
 
-    protected $model = \App\Models\TodoModel::class;
 
     public function definition(): array
     {
